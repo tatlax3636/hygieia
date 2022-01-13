@@ -39,7 +39,7 @@ export class SecurityScanService {
       prunedRefreshLink = refreshLink.split('.com')[1];
       hostname = window.location.hostname;
     }
-
+    // ADDING COMMENT ON TEMP BRANCH FOR TEST
     if (hostname.includes('localhost')) {
       return this.http.get(`http://${hostname}:8081${prunedRefreshLink}`);
     } else {
